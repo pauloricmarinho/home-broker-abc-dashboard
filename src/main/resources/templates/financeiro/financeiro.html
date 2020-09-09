@@ -1,0 +1,46 @@
+<html  
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template"> <!-- NOME DO ARQUIVO template.html -->
+	<!-- Dependencia do Thymeleaf -->
+<head>
+	<meta charset="UTF-8"></meta>
+	<title>Dados Financeiros - MAGAZINE LUIZA</title>
+</head>
+
+<section layout:fragment="conteudo">
+
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dados Financeiros - <small>MAGAZINE LUIZA</small></h1>
+                </div>
+                <div class="table-responsive">
+                    <table id="financial-table" class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Data</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+                                <th>Close</th>                                 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="f : ${financesDTO}">
+                                <td th:text="${f.date}">1</td>
+                                <td th:text="${f.open}">1</td>
+                                <td th:text="${f.high}">1</td>
+                                <td th:text="${f.low}">1</td>                                
+                                <td th:text="${f.close}">1</td>                                                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    
+
+</section>
+</html>

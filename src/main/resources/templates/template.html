@@ -1,0 +1,47 @@
+<html  
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+	<!-- Dependencia do Thymeleaf -->
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<meta name="viewport" content="width=device-width"></meta>
+
+<title>Home Broker ABC</title>
+
+<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"></link>
+<link rel="stylesheet" type="text/css" th:href="@{/css/dashboard.css}"></link>
+<link rel="stylesheet" type="text/css" th:href="@{/css/dataTables.bootstrap.min.css}"></link>
+    
+</head>
+<body>
+
+<div class="container-fluid">
+	<!-- Arquivo de Cabeçalho -->
+	<header layout:include="header"></header>
+	
+	<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+		</br></br>
+		<section layout:fragment="conteudo">
+		    <p>Page content goes here</p>
+		</section>
+	</main>
+</div>
+
+<!-- <footer layout:include="footer"></footer> -->
+
+<script type="text/javascript" th:src="@{/jquery/jquery-3.4.1.min.js}"></script>
+
+	<script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/jquery.dataTables.min.js}"></script>
+    <script th:src="@{/js/dataTables.bootstrap.min.js}"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#financial-table').DataTable();
+        } );
+    </script>
+
+</body>
+</html>
