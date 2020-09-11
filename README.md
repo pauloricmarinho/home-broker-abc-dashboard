@@ -1,6 +1,7 @@
 # Home Broker ABC Dashboard
 
-Este Projeot foi gerado com Spring Boot.
+Este Projeto foi gerado com Spring Boot para consumir o Serviços da Home Broker API e gerar os gráficos EMA e MACD com os dados da Magazine Luiza.
+Front-end gerado com Thymeleaf e gráficos com CanvasJS.
 
 
 ### Projeto de Bloco Frameworks & Servicos Java - MIT Engenharia de Software INFNET.
