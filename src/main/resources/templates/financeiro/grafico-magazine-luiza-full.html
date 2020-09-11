@@ -43,7 +43,7 @@ window.onload = function () {
       data: [{
         type: "candlestick",
         showInLegend: true,
-        name: "Stock Price",
+        name: "Preço das Ações",
         yValueFormatString: "$#,###.00",
         dataPoints : dps1
       }],
@@ -53,8 +53,8 @@ window.onload = function () {
         dataPoints: dps2
       }],
       slider: {
-        minimum: new Date(2018, 03, 01),
-        maximum: new Date(2018, 05, 01)
+        minimum: new Date(2019, 09, 01),
+        maximum: new Date(2020, 01, 01)
       }
     }
   });
@@ -134,9 +134,9 @@ window.onload = function () {
 </script>
 <style>
   .dropdown {
-    position: 20px;
-    top: 10px;
-    left: 10px;
+    position: fixed;
+    top: 10%;
+    right: 10%;
     display: inline-block;
     border: 1px solid #539c53;
     background-color: #5cb85c;
@@ -176,7 +176,7 @@ window.onload = function () {
    	</div>
 	
 	
-<div id="chartContainer" style="height: 500px; width: 80%;"></div>
+<div id="chartContainer" style="height: 500px; width: 95%;"></div>
 <div class="dropdown">
   <span>Adicionar Indicadores</span>
   <div class="dropdown-content">
